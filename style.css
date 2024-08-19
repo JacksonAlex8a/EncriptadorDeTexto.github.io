@@ -96,8 +96,9 @@ body{
     margin: 0 0 0 30px;
 }
 
-.botonCopiar{
-    
+.boton3{
+
+   
     width: 20%;
     height: 67px;
     font-size: 1rem;
@@ -105,9 +106,9 @@ body{
     background-color: #D8DFE8;
     padding: 10px 0;
     border-radius: 24px;
-    border-color: #0A3871;
-    margin: 500px -100px 0 -140px;
-  }
+    border-color: #0A3871; 
+    margin: 500px -80px 0 -140px;
+}
 
   .boton1:hover{
 
@@ -118,7 +119,7 @@ body{
     background-color: #b1cef3;
   }
   
-  .botonCopiar:hover{
+  .boton3:hover{
   
     background-color: #b1cef3;
   }
@@ -142,7 +143,7 @@ body{
 
 
 .mensaje_en_rectangulo{
-
+    
     color: #343A40;
     font-size: 1.5rem;
     width: 200px; 
@@ -162,11 +163,12 @@ body{
 
 
 
- @media(max-width: 600px){ /*Version movil*/
+ @media(min-width: 320px) and (max-width: 600px){ /*Version movil*/
     .Dispositivos{
 
         display: flex;
         flex-direction: column;
+        margin: 0 0 0 35px;
         gap: 20px;   
     }
     
@@ -197,7 +199,11 @@ body{
         gap: 20px;
     }
 
-    .mensaje{
+    .boton3{
+
+        width: 65%;
+        margin: -180px 0 0 35px
+    }
 
         .mensaje_en_rectangulo{
         font-family: "Oswald", sans-serif;
@@ -206,23 +212,22 @@ body{
         font-size: 1.5rem;
         width: 80%; 
         text-align: center;
-        margin: -200px 0 0 57px;
+        margin: -300px 0 0 17px;
         }
       .mensaje_en_rectangulo2{
         color: #343A40;
         font-size: 1.2rem;
         width:80%; 
         text-align: center;
-        margin: 0 0 0 60px;
+        margin: 0 0 0 20px;
 
       }        
-    }
 
     .miTextArea{
 
         display: flex;
-        margin: 40px 0 0 40px;
-        width: 110%;
+        margin: 40px 0 0 10px;
+        width: 140%;
         gap: 130px
     }
 
@@ -234,23 +239,19 @@ body{
 
         display: flex;
       
-        height: 190px;   
+        height: 150px;   
        margin: -350px 0px 0 320px;
         
     }
 
     .Botones{
-
-        margin: 40px 0 0 30px ;
+        
+        width: 180%;
+        margin: 40px 0 0 -15px ;
     }
-    .boton1{
 
-        width: 150%;
-    }
-    
     .boton2{
-
-        width: 150%;
+        
         margin: 0 0 0 0;
     }
 
@@ -267,7 +268,10 @@ body{
         margin: -160px 0 0 60px;
     }
 
+    .miMuñeco{
 
+        display: none;
+    }
 }
 
 @media(min-width: 601px) and (max-width: 1040px){ /* Version tablet */
@@ -277,7 +281,7 @@ body{
 
         display: flex;
         flex-direction: column;
-        width: 70%;
+        width: 180%;
         gap: 20px;
     }
 
@@ -288,7 +292,7 @@ body{
     .miTextArea{
 
         display: flex;
-        margin: 30px 50px 0 30px;
+        margin: 30px 50px 0 130px;
  
         width: 130%;
     }
@@ -307,20 +311,28 @@ body{
 
     .Botones{
  
-        margin: 0 0 0 40px;
+        margin: 0 0 0 100px;
         width: 150%;
     }
 
-    .botonCopiar{
+    .boton1{
 
-        width: 83%;
-        margin: -190px 0 0 50px;
-        background-color: white;
+        width: 60%;
     }
 
+    .boton2{
+
+        width: 60%;
+    }
+
+    .boton3{
+
+        width: 85%;
+        margin: -200px 0 0 50px
+    }
     .misImagenes{
 
-         margin: 300px 0 0 -50px;        
+         margin: 300px 0 0 -0px;        
     }
      .miRectangulo{
 
@@ -337,7 +349,7 @@ body{
        font-size: 1.5rem;
        width: 70%; 
        text-align: center;
-       margin: -200px 0 0 120px;
+       margin: -300px 0 0 120px;
      }
 
      .mensaje_en_rectangulo2{
@@ -355,4 +367,3 @@ body{
         display: none;
      }
 }
-
