@@ -1,0 +1,477 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+
+body{
+
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: #ceddf0;
+}
+
+.principal{
+
+    width: 90%;
+    display: flex;
+}
+
+.Dispositivos{
+
+    width: 90%;
+    display: flex;  
+}
+.contenido_principal{
+
+    width: 60%;
+    flex-direction: column;
+}
+
+.miLogo{
+
+    padding: 50px 0 0 40px;
+    width: 100px;
+}
+
+.miTextArea{
+    border-color: #ceddf0;
+    resize: none;
+    height: 150px;
+    outline: none;
+    display: flex;
+    width: 70%;
+    height: 300px;
+    font-size: 1.5rem;
+    margin: 50px 0 0 200px;
+    color: #0A3871;
+    background-color: #ceddf0;
+}
+
+.miTextArea2{
+
+      width: 100%;
+      font-size: 1.2rem;
+      resize: none;
+      background-color: white; 
+      height: 300px;
+     /* border-color: white; */
+}
+
+.mensajeEncriptado{
+  
+  margin: 50px -100px 0 -285px; 
+}
+
+::placeholder{
+
+    color: #0A3871;
+}
+
+.Botones{
+
+    display: flex;
+    width: 75%;
+    margin: 80px 0 0 200px;
+}
+.boton1{
+
+    width: 350px;
+    height: 67px;
+    font-size: 1rem;
+    color: white;
+    background-color: #0A3871;
+    padding: 10px 0;
+    border-radius: 24px;
+    border-color: #0A3871;
+}
+
+.boton2{
+
+    width: 350px;
+    height: 67px;
+    font-size: 1rem;
+    color: #0A3871;
+    background-color: #D8DFE8;
+    padding: 10px 0;
+    border-radius: 24px;
+    border-color: #0A3871;
+    margin: 0 0 0 30px;
+}
+
+.botonCopiar{
+    
+    width: 20%;
+    height: 67px;
+    font-size: 1rem;
+    color: #0A3871;
+    background-color: #D8DFE8;
+    padding: 10px 0;
+    border-radius: 24px;
+    border-color: #0A3871;
+    margin: 500px -100px 0 -140px;
+  }
+
+  .boton1:hover{
+
+    background-color: rgb(19, 19, 228);
+  }
+  .boton2:hover{
+  
+    background-color: #b1cef3;
+  }
+  
+  .botonCopiar:hover{
+  
+    background-color: #b1cef3;
+  }
+.misImagenes{
+
+  margin: 300px 0 0 230px;
+}
+
+.miRectangulo{
+
+    margin: -300px 0 0 50px;
+    width: 330px;
+    height: 620px;
+}
+
+.miMuñeco{
+    display: flex;
+    width: 250px;
+    margin: -500px 0 0 97px;
+}
+
+
+.mensaje_en_rectangulo{
+
+    color: #343A40;
+    font-size: 1.5rem;
+    width: 200px; 
+    text-align: center;
+    margin: 400px 0 0 -260px;
+}
+
+.mensaje_en_rectangulo2{
+    color: #343A40;
+    font-size: 1.2rem;
+    width: 350px; 
+    text-align: center;
+    margin: 50px 0 0 -340px;
+}
+
+
+
+
+
+ @media(max-width: 600px){ /*Version movil*/
+    .Dispositivos{
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;   
+    }
+    
+    .miLogo{
+
+        display: flex;
+        padding: 20px;
+        margin: 0 0 0 -60px;
+    }
+    .misImagenes{
+
+      margin: 300px 0 0 -40px;
+     
+    }
+
+    .miRectangulo{
+
+         width: 75%;
+        height: 300px;
+    }
+
+    .Botones{
+
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 0 0 60px;
+        gap: 20px;
+    }
+
+    .mensaje{
+
+        .mensaje_en_rectangulo{
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: 20px;
+        color: #343A40;
+        font-size: 1.5rem;
+        width: 80%; 
+        text-align: center;
+        margin: -200px 0 0 57px;
+        }
+      .mensaje_en_rectangulo2{
+        color: #343A40;
+        font-size: 1.2rem;
+        width:80%; 
+        text-align: center;
+        margin: 0 0 0 60px;
+
+      }        
+    }
+
+    .miTextArea{
+
+        display: flex;
+        margin: 40px 0 0 40px;
+        width: 110%;
+        gap: 130px
+    }
+
+    .mensajeEncriptado{
+
+          width: 65%;
+    }
+    .miTextArea2{
+
+        display: flex;
+      
+        height: 190px;   
+       margin: -350px 0px 0 320px;
+        
+    }
+
+    .Botones{
+
+        margin: 40px 0 0 30px ;
+    }
+    .boton1{
+
+        width: 150%;
+    }
+    
+    .boton2{
+
+        width: 150%;
+        margin: 0 0 0 0;
+    }
+
+      .mensaje_de_encriptado{
+
+        width: 70%;
+        margin: -200px 0 0 80px;
+      }
+
+    .botonCopiar{
+ 
+        width: 55%;
+        height: 50px;
+        margin: -160px 0 0 60px;
+    }
+
+
+}
+
+@media(min-width: 601px) and (max-width: 1040px){ /* Version tablet */
+
+
+    .Dispositivos{
+
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        gap: 20px;
+    }
+
+    .miLogo{
+        padding: 50px 0 0 0;
+    }
+
+    .miTextArea{
+
+        display: flex;
+        margin: 30px 50px 0 30px;
+ 
+        width: 130%;
+    }
+    
+
+    .mensajeEncriptado{
+
+       width: 85%; 
+    }
+    .miTextArea2{
+
+        display: flex;
+        height: 140px;
+        margin: -350px 0 0 330px;
+    }
+
+    .Botones{
+ 
+        margin: 0 0 0 40px;
+        width: 150%;
+    }
+
+    .botonCopiar{
+
+        width: 83%;
+        margin: -190px 0 0 50px;
+        background-color: white;
+    }
+
+    .misImagenes{
+
+         margin: 300px 0 0 -50px;        
+    }
+     .miRectangulo{
+
+        margin-left: 35px;
+        width: 100%;
+        height: 300px;
+
+     }
+
+    
+     .mensaje_en_rectangulo{
+
+       color: #343A40;
+       font-size: 1.5rem;
+       width: 70%; 
+       text-align: center;
+       margin: -200px 0 0 120px;
+     }
+
+     .mensaje_en_rectangulo2{
+
+        color: #343A40;
+        font-size: 1.2rem;
+        width:80%; 
+        text-align: center;
+        margin: 0 0 0 90px;
+
+     }
+
+     .miMuñeco{
+
+        display: none;
+     }
+}
+
+
+
+
+
+
+/*body{
+
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: #ceddf0;
+}
+
+textarea{
+
+    border-color: #ceddf0;
+    resize: none;
+    height: 250px;
+    outline: none;
+}
+
+.contenido_principal{
+
+    width: 185%;
+    display: flex;
+  
+}
+
+.Principal{
+
+    display: flex;
+}
+
+.miLogo{
+
+    padding: 50px 0 0 40px;
+    width: 100px;
+}
+
+.miTextArea{
+
+    width: 70%;
+    height: 300px;
+    font-size: 1.5rem;
+    margin: 50px 0 0 200px;
+    color: #0A3871;
+    background-color: #ceddf0;
+}
+
+::placeholder{
+
+    color: #0A3871;
+}
+
+.Botones{
+
+    display: flex;
+    width: 75%;
+    margin: 80px 0 0 200px;
+}
+.boton1{
+
+    width: 50%;
+    height: 67px;
+    font-size: 1rem;
+    color: white;
+    background-color: #0A3871;
+    padding: 10px 0;
+    border-radius: 24px;
+    border-color: #0A3871;
+}
+
+.boton2{
+
+    width: 50%;
+    height: 67px;
+    font-size: 1rem;
+    color: #0A3871;
+    background-color: #D8DFE8;
+    padding: 10px 0;
+    border-radius: 24px;
+    border-color: #0A3871;
+    margin: 0 0 0 30px;
+}
+
+.misImagenes{
+
+    display: flex;
+    justify-content: space-between;
+}
+.miRectangulo {
+
+   width: 98%;
+    height: 600px;
+
+}
+
+.miMuñeco{
+
+    display:flex;
+    width: 45%;
+    height: 30%;
+    margin: 110px 65px 0 -100%;
+}
+
+/*.muñeco_Alura{
+
+    width: 600px;
+  
+  }
+  
+  .imagen_rectangulo{
+  
+
+  }*
+.seccionImagen{
+
+    display: flex;
+    
+}*/

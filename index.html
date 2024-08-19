@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador De Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <main class = "Principal" >
+        
+         <section class = "Dispositivos">
+          <div class ="contenido_principal">
+              <div class = "miLogo">
+                <img src="Logo.png" alt="Logo-Alura">
+              </div>
+           
+            <textarea class = "miTextArea" id="textoArea" placeholder="Ingresa un texto aqui"></textarea>  
+
+         
+            <div class = "Botones">
+   
+              <button onclick= "encriptarTexto()" class = "boton1">Encriptar</button>
+              <button onclick = "desencriptarTexto()" class = "boton2"> Desencriptar</button>
+            </div>
+
+             
+            </div>
+             <div class = "misImagenes">
+               <img class = "miRectangulo"src="Rectangle 1.png" alt="rectangulo blanco">
+               <img id = "muñeco" class = "miMuñeco"src="muñeco_Alura.png" alt="muñeco">
+             </div>
+   
+          <div id = "losMensajes" class = "mensaje" >
+            <p class = "mensaje_en_rectangulo">Ningún mensaje fue encontrado</p> 
+
+            <div class = "mensaje_en_rectangulo2">
+              <p >Ingresa el texto q desees encriptar y desencriptar</p>
+            </div>
+        </div>         
+              <div class = "mensajeEncriptado">
+
+                <style id = "miArea2">     
+                  .miTextArea2{
+
+                    visibility: hidden;
+                  } 
+              </style>
+
+                <textarea id = "area" class = "miTextArea2" readonly ></textarea>           
+                </div>
+    </section>
+       
+        </main>  
+        
+        <script src = "app.js"></script>
+</body>
+</html>
