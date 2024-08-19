@@ -190,21 +190,6 @@ body{
         height: 300px;
     }
 
-    .Botones{
-
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        margin: 0 0 0 60px;
-        gap: 20px;
-    }
-
-    .boton3{
-
-        width: 65%;
-        margin: -180px 0 0 35px
-    }
-
         .mensaje_en_rectangulo{
         font-family: "Oswald", sans-serif;
         font-optical-sizing: 20px;
@@ -245,9 +230,12 @@ body{
     }
 
     .Botones{
-        
+
+        display: flex;
+        flex-direction:column;
         width: 180%;
-        margin: 40px 0 0 -15px ;
+        margin: 40px 0 0 -15px;
+        gap: 20px;
     }
 
     .boton2{
@@ -255,18 +243,17 @@ body{
         margin: 0 0 0 0;
     }
 
+    .boton3{
+
+        width: 65%;
+        margin: -180px 0 0 35px
+    }
+
       .mensaje_de_encriptado{
 
         width: 70%;
         margin: -200px 0 0 80px;
       }
-
-    .botonCopiar{
- 
-        width: 55%;
-        height: 50px;
-        margin: -160px 0 0 60px;
-    }
 
     .miMuñeco{
 
