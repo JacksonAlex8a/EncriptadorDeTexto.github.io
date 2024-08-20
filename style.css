@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
 
 body{
@@ -10,7 +9,7 @@ body{
 
 .principal{
 
-    width: 90%;
+    
     display: flex;
 }
 
@@ -52,7 +51,8 @@ body{
       resize: none;
       background-color: white; 
       height: 300px;
-     /* border-color: white; */
+      border-color: white; 
+      outline: none;
 }
 
 .mensajeEncriptado{
@@ -123,6 +123,7 @@ body{
   
     background-color: #b1cef3;
   }
+
 .misImagenes{
 
   margin: 300px 0 0 230px;
@@ -143,7 +144,7 @@ body{
 
 
 .mensaje_en_rectangulo{
-    
+
     color: #343A40;
     font-size: 1.5rem;
     width: 200px; 
@@ -159,7 +160,18 @@ body{
     margin: 50px 0 0 -340px;
 }
 
+.pieDeLaPagina{
 
+    margin: 30px 0 0 100px;
+    padding: 30px ;
+    width: 50%;
+    color:  #0A3871;
+    text-align: center;
+    font-size: 1.4rem;
+    background-color: aliceblue;
+    border: 10px solid #0A3871;
+    border-radius: 30px;
+}
 
 
 
@@ -190,6 +202,8 @@ body{
         height: 300px;
     }
 
+  
+
         .mensaje_en_rectangulo{
         font-family: "Oswald", sans-serif;
         font-optical-sizing: 20px;
@@ -211,9 +225,11 @@ body{
     .miTextArea{
 
         display: flex;
-        margin: 40px 0 0 10px;
+        margin: 40px 0 0 5px;
         width: 140%;
-        gap: 130px
+        gap: 130px;
+         border: 5px solid  #0A3871;
+        border-radius: 20px;
     }
 
     .mensajeEncriptado{
@@ -222,20 +238,22 @@ body{
     }
     .miTextArea2{
 
-        display: flex;
-      
+        display: flex;  
         height: 150px;   
-       margin: -350px 0px 0 320px;
-        
+        margin: -350px 0px 0 320px;
+        border-color: white; 
+        outline: none;
+
+
     }
 
     .Botones{
-
+        
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
         width: 180%;
-        margin: 40px 0 0 -15px;
-        gap: 20px;
+        margin: 40px 0 0 -15px ;
+        gap: 20px
     }
 
     .boton2{
@@ -243,19 +261,24 @@ body{
         margin: 0 0 0 0;
     }
 
+
     .boton3{
 
         width: 65%;
-        margin: -180px 0 0 35px
+        margin: -180px 0 0 40px
     }
+    
+    .pieDeLaPagina{
 
+        margin: 40px 0 0 50px;
+    }
     .miMuñeco{
 
         display: none;
     }
 }
 
-@media(min-width: 601px) and (max-width: 1040px){ /* Version tablet */
+@media(min-width: 601px) and (max-width: 900px){ /* Version tablet */
 
 
     .Dispositivos{
@@ -274,8 +297,9 @@ body{
 
         display: flex;
         margin: 30px 50px 0 130px;
- 
-        width: 130%;
+        width: 140%;
+        border: 2px solid  #0A3871;
+        border-radius: 20px;
     }
     
 
@@ -287,12 +311,14 @@ body{
 
         display: flex;
         height: 140px;
-        margin: -350px 0 0 330px;
+        margin: -350px 0 0 430px;
+        border-color: white; 
+        outline: none;
     }
 
     .Botones{
  
-        margin: 0 0 0 100px;
+        margin: 30px 0 0 100px;
         width: 150%;
     }
 
@@ -309,7 +335,7 @@ body{
     .boton3{
 
         width: 85%;
-        margin: -200px 0 0 50px
+        margin: -200px 0 0 140px
     }
     .misImagenes{
 
@@ -323,26 +349,32 @@ body{
 
      }
 
-    
      .mensaje_en_rectangulo{
 
+
        color: #343A40;
-       font-size: 1.5rem;
+       font-size: 1.9rem;
        width: 70%; 
        text-align: center;
-       margin: -300px 0 0 120px;
+       margin: -300px 0 0 240px;
      }
 
      .mensaje_en_rectangulo2{
-
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: 20px;
         color: #343A40;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         width:80%; 
         text-align: center;
-        margin: 0 0 0 90px;
+        margin: 0 0 0 170px;
 
      }
 
+     .pieDeLaPagina{
+
+        width: 100%;
+        margin: 90px 0 0 300px;
+     }
      .miMuñeco{
 
         display: none;
