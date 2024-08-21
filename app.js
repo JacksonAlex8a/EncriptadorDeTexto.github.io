@@ -1,14 +1,12 @@
 let contador = 0,contador2 = 0;
- let texto = "", nuevoTexto = "",aux = "",aux2 = "";
+let aux2 = "",texto = "";
 
-  function encriptarTexto(){
-    
-   let textoActual = document.getElementById('textoArea').value;
-   let element = document.getElementById('area');
+  function encriptarTexto(){ // Encriptando texto
+    let nuevoTexto = "";
 
-   element.style.visibility = 'visible';
+    let textoActual = document.getElementById('textoArea').value;
 
-   texto = textoActual;
+    texto = textoActual;
 
     for(let i = 0; i < texto.length; i++){
 
@@ -39,19 +37,41 @@ let contador = 0,contador2 = 0;
       }
     }
 
+       visibilidadDeElementos('area');
+       visibilidadDeElementos('boton3');
        eliminarFotoYTexto();
        accionBotonCopiar();
        textoSinAcentoYMayuscula(nuevoTexto);
-       aux = nuevoTexto;
        nuevoTexto = "";
+       
 }
 
-function desencriptarTexto(){
+function desencriptarTexto(){ // funcion q desencripta el texto encriptado
 
+  let nuevoTexto = "";
+
+  let textoActual = document.getElementById('textoArea').value;
+
+  nuevoTexto = textoActual;
    
-  asignarTexto('area',texto);
-}
+  console.log(nuevoTexto);
+  nuevoTexto = nuevoTexto.replace("ai", "a").replace("enter","e").
+       replace("imes","i").replace("ober","o").replace("ufat","u");
 
+  visibilidadDeElementos('area');
+  visibilidadDeElementos('boton3');
+  eliminarFotoYTexto();
+  accionBotonCopiar();
+  textoSinAcentoYMayuscula(nuevoTexto);
+ }
+
+
+function visibilidadDeElementos(elemento){ // Esta funcion le quita invisibilidad a mis elementos
+
+    let element = document.getElementById(elemento);
+
+    element.style.visibility = 'visible';
+}
 
 function asignarTexto(etiqueta, texto){
 
@@ -75,35 +95,26 @@ function eliminarFotoYTexto(){
   return;
 }
 
-function creandoBtnCopiar(){
+ function accionBotonCopiar(){ // Metodo q me permite dar accion al boton de copiar
 
-   let nuevoElemento = document.createElement("button");
-   nuevoElemento.textContent = "Copiar";
-
-   nuevoElemento.className = 'botonCopiar';
-
-   if(contador == 1){
-
-      let seccion = document.querySelector('section');
-      seccion.appendChild(nuevoElemento);
-   } 
-
-   return nuevoElemento;
- }
-
- function accionBotonCopiar(){
-
-  let boton = creandoBtnCopiar();
+  let boton = document.getElementById('boton3');
 
   boton.addEventListener("click",function(){
 
-       navigator.clipboard.writeText(aux); 
-  });
+      var texto1 = document.getElementById('area');
 
+      texto1.select();
+      texto1.setSelectionRange(0,99999);
+
+      document.execCommand("copy");
+
+      document.getElementById('area').extContent = "texto copiado";
+  });
+  
   return boton;
 }
 
-function textoSinAcentoYMayuscula(textoDeArea){
+function textoSinAcentoYMayuscula(textoDeArea){ //Me permite detectar si hay mayusculas o minusculas
 
    let acentos= "ÁÉÍÓÚÑáéíóúñABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
    let validarTexto = false;
@@ -112,11 +123,12 @@ function textoSinAcentoYMayuscula(textoDeArea){
    
    for(let i = 0; i < acentos.length; i++){
    
+   
      for(let j = 0; j < aux2.length; j++){
        
        if(aux2.charAt(j) == acentos.charAt(i)){
 
-        asignarTexto('mensaje', "ERROR!! no puede contener Mayusculas ni Acentos");
+        alert("ERROR!! no se puede implementar caracteres con acentos ni mayusculas");
       
         contador2 = -1;
         break;
@@ -124,11 +136,10 @@ function textoSinAcentoYMayuscula(textoDeArea){
        }
     }
  }
+ 
+   if(contador2 == -1){
 
-      if(contador2 == -1){
-
-        validarTexto = false;
-
+        validarTexto = false;  
         contador2 = 0;     
       
       } else {
@@ -139,6 +150,5 @@ function textoSinAcentoYMayuscula(textoDeArea){
  
           asignarTexto('area', textoDeArea);
       }         
-   }
- 
+   }  
 }
