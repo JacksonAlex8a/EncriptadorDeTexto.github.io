@@ -1,5 +1,5 @@
 let contador = 0,contador2 = 0;
-let aux2 = "",texto = "";
+let texto = "";
 
   function encriptarTexto(){ // Encriptando texto
     let nuevoTexto = "";
@@ -48,15 +48,15 @@ let aux2 = "",texto = "";
 
 function desencriptarTexto(){ // funcion q desencripta el texto encriptado
 
-  let nuevoTexto = "";
+  let nuevoTexto = "",aux = "";
 
   let textoActual = document.getElementById('textoArea').value;
 
-  nuevoTexto = textoActual;
+  aux = textoActual;
    
   console.log(nuevoTexto);
-  nuevoTexto = nuevoTexto.replace("ai", "a").replace("enter","e").
-       replace("imes","i").replace("ober","o").replace("ufat","u");
+  nuevoTexto = aux.replaceAll("ai","a").replaceAll("enter","e").replaceAll("imes","i").
+                replaceAll("ober","o").replaceAll("ufat","u");
 
   visibilidadDeElementos('area');
   visibilidadDeElementos('boton3');
@@ -73,7 +73,7 @@ function visibilidadDeElementos(elemento){ // Esta funcion le quita invisibilida
     element.style.visibility = 'visible';
 }
 
-function asignarTexto(etiqueta, texto){
+function asignarTexto(etiqueta, texto){ // Esta funcion permite darle texto a mi area
 
   let dato = document.getElementById(etiqueta);
 
@@ -117,12 +117,11 @@ function eliminarFotoYTexto(){
 function textoSinAcentoYMayuscula(textoDeArea){ //Me permite detectar si hay mayusculas o minusculas
 
    let acentos= "ÁÉÍÓÚÑáéíóúñABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
-   let validarTexto = false;
+   let validarTexto = false,aux2 = "";
 
    aux2 = textoDeArea;
    
    for(let i = 0; i < acentos.length; i++){
-   
    
      for(let j = 0; j < aux2.length; j++){
        
@@ -150,5 +149,5 @@ function textoSinAcentoYMayuscula(textoDeArea){ //Me permite detectar si hay may
  
           asignarTexto('area', textoDeArea);
       }         
-   }  
+   }   
 }
