@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
 
 body{
@@ -9,14 +10,15 @@ body{
 
 .principal{
 
-    
+   
     display: flex;
 }
 
 .Dispositivos{
 
     width: 90%;
-    display: flex;  
+    display: flex; 
+
 }
 .contenido_principal{
 
@@ -45,18 +47,18 @@ body{
 }
 
 .miTextArea2{
-
-      width: 100%;
-      font-size: 1.2rem;
+    
+      font-size: 1.3rem;
       resize: none;
       background-color: white; 
-      height: 300px;
+      height: 350px;
       border-color: white; 
       outline: none;
+      color: #0A3871;
 }
 
 .mensajeEncriptado{
-  
+  width: 100%;
   margin: 50px -100px 0 -285px; 
 }
 
@@ -96,10 +98,14 @@ body{
     margin: 0 0 0 30px;
 }
 
+.botonCopiar {
+
+      margin: 500px 0 0 -150px; 
+}
 .boton3{
 
    
-    width: 20%;
+    width: 250px;
     height: 67px;
     font-size: 1rem;
     color: #0A3871;
@@ -107,7 +113,7 @@ body{
     padding: 10px 0;
     border-radius: 24px;
     border-color: #0A3871; 
-    margin: 500px -80px 0 -140px;
+ 
 }
 
   .boton1:hover{
@@ -142,6 +148,12 @@ body{
     margin: -500px 0 0 97px;
 }
 
+.signo{
+
+    display: flex;
+    height: 15px;
+    margin: 500px 1100px 0 -1100px;
+}
 
 .mensaje_en_rectangulo{
 
@@ -155,9 +167,9 @@ body{
 .mensaje_en_rectangulo2{
     color: #343A40;
     font-size: 1.2rem;
-    width: 350px; 
+    width: 280px; 
     text-align: center;
-    margin: 50px 0 0 -340px;
+    margin: 50px 0 0 -300px;
 }
 
 .pieDeLaPagina{
@@ -173,7 +185,17 @@ body{
     border-radius: 30px;
 }
 
+.prohibir{
 
+
+    height: 0;
+}
+.Prohibir_Mayusculas_Acentos{
+
+    margin: 500px 0 0 -1080px;
+  
+    color: #394d66;
+}
 
  @media(min-width: 320px) and (max-width: 600px){ /*Version movil*/
     .Dispositivos{
@@ -202,8 +224,6 @@ body{
         height: 300px;
     }
 
-  
-
         .mensaje_en_rectangulo{
         font-family: "Oswald", sans-serif;
         font-optical-sizing: 20px;
@@ -216,9 +236,9 @@ body{
       .mensaje_en_rectangulo2{
         color: #343A40;
         font-size: 1.2rem;
-        width:80%; 
+        width:70%; 
         text-align: center;
-        margin: 0 0 0 20px;
+        margin: 0 0 0 30px;
 
       }        
 
@@ -228,23 +248,18 @@ body{
         margin: 40px 0 0 5px;
         width: 140%;
         gap: 130px;
-         border: 5px solid  #0A3871;
+        border: 5px solid  #0A3871;
         border-radius: 20px;
     }
 
-    .mensajeEncriptado{
-
-          width: 65%;
-    }
     .miTextArea2{
-
+        width: 67%;
         display: flex;  
         height: 150px;   
         margin: -350px 0px 0 320px;
-        border-color: white; 
+        border-color: white ; 
         outline: none;
-
-
+        color: #0A3871;
     }
 
     .Botones{
@@ -252,12 +267,17 @@ body{
         display: flex;
         flex-direction: column;
         width: 180%;
-        margin: 40px 0 0 -15px ;
+        margin: 60px 0 0 -15px ;
         gap: 20px
     }
 
+    .boton1{
+
+        width: 93%;
+    }
     .boton2{
         
+        width: 93%;
         margin: 0 0 0 0;
     }
 
@@ -267,14 +287,30 @@ body{
         width: 65%;
         margin: -180px 0 0 40px
     }
+
+    .botonCopiar{
+
+        margin: -160px 0 0 0;
+    }
     
     .pieDeLaPagina{
 
-        margin: 40px 0 0 50px;
+        margin: 550px 0 0 50px;
     }
     .miMuñeco{
 
         display: none;
+    }
+
+    .Prohibir_Mayusculas_Acentos{
+
+        margin: -537px 0 0 30px;
+    }
+    .signo{
+
+    display: flex;
+    width: 15px;
+    margin: -555px 0px 0 0px;
     }
 }
 
@@ -302,23 +338,19 @@ body{
         border-radius: 20px;
     }
     
-
-    .mensajeEncriptado{
-
-       width: 85%; 
-    }
     .miTextArea2{
-
+       width: 55%; 
         display: flex;
         height: 140px;
-        margin: -350px 0 0 430px;
+        margin: -350px 0 0 630px;
         border-color: white; 
         outline: none;
+        color: #0A3871;
     }
 
     .Botones{
  
-        margin: 30px 0 0 100px;
+        margin: 70px 0 0 100px;
         width: 150%;
     }
 
@@ -335,8 +367,13 @@ body{
     .boton3{
 
         width: 85%;
-        margin: -200px 0 0 140px
+       
     }
+
+    .botonCopiar{
+
+     margin: -200px 0 0 230px
+}
     .misImagenes{
 
          margin: 300px 0 0 -0px;        
@@ -350,8 +387,6 @@ body{
      }
 
      .mensaje_en_rectangulo{
-
-
        color: #343A40;
        font-size: 1.9rem;
        width: 70%; 
@@ -371,12 +406,22 @@ body{
      }
 
      .pieDeLaPagina{
-
+ 
         width: 100%;
-        margin: 90px 0 0 300px;
+        margin: 480px 0 0 300px;
      }
      .miMuñeco{
 
         display: none;
+     }
+    
+     .signo{
+        display: flex;
+        width: 15px;
+        margin: -455px 0px 0 130px;
+     }
+     .Prohibir_Mayusculas_Acentos{
+
+        margin: -440px 0 0 160px;
      }
 }
