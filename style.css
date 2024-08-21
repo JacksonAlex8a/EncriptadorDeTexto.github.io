@@ -261,7 +261,10 @@ body{
         outline: none;
         color: #0A3871;
     }
+    ::placeholder{
 
+        padding: 20px;
+    }
     .Botones{
         
         display: flex;
