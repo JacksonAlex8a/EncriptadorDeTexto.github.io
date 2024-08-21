@@ -22,10 +22,10 @@
             <div class = "Botones">
    
               <button onclick= "encriptarTexto()" class = "boton1">Encriptar</button>
-              <button onclick = "desencriptarTexto()" class = "boton2"> Desencriptar</button>
+              <button onclick = "desencriptarTexto()" class = "boton2"> Desencriptar</button>     
+            
             </div>
-
-             
+            
             </div>
              <div class = "misImagenes">
                <img class = "miRectangulo"src="Rectangle 1.png" alt="rectangulo blanco">
@@ -36,23 +36,41 @@
             <p class = "mensaje_en_rectangulo">Ningún mensaje fue encontrado</p> 
 
             <div class = "mensaje_en_rectangulo2">
-              <p >Ingresa el texto q desees encriptar y desencriptar</p>
+                 <p >Ingresa el texto q desees encriptar y desencriptar</p>
             </div>
-        </div>         
-              <div class = "mensajeEncriptado">
+        </div>   
 
-                <style id = "miArea2">     
+              <div class = "mensajeEncriptado">
+                <style>     
                   .miTextArea2{
 
                     visibility: hidden;
                   } 
               </style>
+                   <textarea id = "area" class = "miTextArea2" readonly ></textarea>           
+              </div>  
+                
+                   <style> 
+                     .boton3{
+                     visibility: hidden;
+                  }
+                   </style>
 
-                <textarea id = "area" class = "miTextArea2" readonly ></textarea>           
-                </div>
+              <div class = "botonCopiar">
+                 <button class = "boton3" id = "boton3">Copiar</button> 
+              </div> 
+              
+                <div class = "prohibir">
+                 <p class = "Prohibir_Mayusculas_Acentos">No se permite acento y mayúsculas</p>
+               </div>
+            
+              
+             <img class = "signo"src="signo de exclamacion.png" alt="signo de exclamacion">
+             
     </section>
-       
-        </main>  
+
+          <footer class = "pieDeLaPagina"> Desarrollado por: Jackson Prieto.</footer>   
+      </main>  
         
         <script src = "app.js"></script>
 </body>
