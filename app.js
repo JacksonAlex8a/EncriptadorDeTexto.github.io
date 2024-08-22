@@ -137,8 +137,6 @@ function textoSinAcentoYMayuscula(textoDeArea){ //Me permite detectar si hay may
  }
  
    if(contador2 == -1){
-
-        validarTexto = false;  
         contador2 = 0;     
       
       } else {
