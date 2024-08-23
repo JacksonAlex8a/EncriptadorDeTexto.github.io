@@ -134,7 +134,7 @@ function textoSinAcentoYMayuscula(textoDeArea){ //Me permite detectar si hay may
     }
  }
  
-   
+   validacionTexto();
 }
 
 function validacionTexto(){
@@ -159,4 +159,3 @@ function validacionTexto(){
    }   
 }
 
-validacionTexto();
