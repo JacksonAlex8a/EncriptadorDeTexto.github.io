@@ -138,7 +138,7 @@ function textoSinAcentoYMayuscula(textoDeArea){ //Me permite detectar si hay may
 }
 
 function validacionTexto(mensajeArea,x,y){
-
+ alert(y);
     if(x == -1){
 
    alert("ERROR!! no se puede implementar  caracteres con acentos ni mayusculas");
