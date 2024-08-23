@@ -150,11 +150,11 @@ function textoSinAcentoYMayuscula(textoDeArea){ //Me permite detectar si hay may
       
       } else {
 
-        validarTexto = true;
+       // validarTexto = true;
 
-         if(validarTexto){
+         //if(validarTexto){
  
           asignarTexto('area', textoDeArea);
-      }         
+               
    }   
 }
