@@ -135,6 +135,7 @@ function textoSinAcentoYMayuscula(textoDeArea){ //Me permite detectar si hay may
  }
  
    validacionTexto(textoDeArea,x,aux3);
+   
 }
 
 function validacionTexto(mensajeArea,x,y){
@@ -150,8 +151,7 @@ function validacionTexto(mensajeArea,x,y){
    } else {
 
       alert("Elimina los caracteres mayúsculas: " + y);
-   }
-        contador2 = 0;     
+   }
       
       } else {
  
