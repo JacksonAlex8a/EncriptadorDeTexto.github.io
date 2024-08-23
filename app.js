@@ -117,7 +117,7 @@ function eliminarFotoYTexto(){
 function textoSinAcentoYMayuscula(textoDeArea){ //Me permite detectar si hay mayusculas o acentos
 
    let acentos= "ÁÉÍÓÚÑáéíóúñABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
-   let validarTexto = false,aux2 = "";
+   let validarTexto = false,aux2 = "", aux3 = "";
 
    aux2 = textoDeArea;
    
@@ -126,7 +126,7 @@ function textoSinAcentoYMayuscula(textoDeArea){ //Me permite detectar si hay may
      for(let j = 0; j < aux2.length; j++){
        
        if(aux2.charAt(j) == acentos.charAt(i)){
-      
+        aux3 = aux2.charAt(j);
         contador2 = -1;
         break;
          
@@ -136,8 +136,16 @@ function textoSinAcentoYMayuscula(textoDeArea){ //Me permite detectar si hay may
  
    if(contador2 == -1){
 
-   alert("ERROR!! no se puede implementar              caracteres con acentos ni mayusculas");
+   alert("ERROR!! no se puede implementar                  caracteres con acentos ni mayusculas");
 
+    if(aux3.length == 1){
+
+    alert("Eliminar el carácter mayúscula: " + aux3);
+
+} else {
+
+    alert("Elimina los caracteres mayúsculas: " + aux3);
+}
         contador2 = 0;     
       
       } else {
