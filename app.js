@@ -126,15 +126,8 @@ function textoSinAcentoYMayuscula(textoDeArea){ //Me permite detectar si hay may
      for(let j = 0; j < aux2.length; j++){
        
        if(aux2.charAt(j) == caracteresInvalidos.charAt(i)){
-       let k = 0;
-       aux3 += aux2.charAt(j) + "-";
-
-      while(k < aux3.length){
-     
-         aux += aux3.charAt(k);
-         k++;
-      }
-        aux3 = "";
+       
+        aux3 += aux2.charAt(j);
         x = -1;
         break;
          
@@ -142,9 +135,9 @@ function textoSinAcentoYMayuscula(textoDeArea){ //Me permite detectar si hay may
     }
  }
  
-   validacionTexto(textoDeArea,x,aux);
-   
+   validacionTexto(textoDeArea,x,aux3);
 }
+
 
 function validacionTexto(mensajeArea,x,y){
 
