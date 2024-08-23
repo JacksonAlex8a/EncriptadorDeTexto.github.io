@@ -134,10 +134,10 @@ function textoSinAcentoYMayuscula(textoDeArea){ //Me permite detectar si hay may
     }
  }
  
-   validacionTexto();
+   validacionTexto(textoDeArea);
 }
 
-function validacionTexto(){
+function validacionTexto(mensajeArea){
 
     if(contador2 == -1){
 
