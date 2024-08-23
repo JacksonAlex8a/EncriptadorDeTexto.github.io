@@ -126,7 +126,7 @@ function textoSinAcentoYMayuscula(textoDeArea){ //Me permite detectar si hay may
      for(let j = 0; j < aux2.length; j++){
        
        if(aux2.charAt(j) == acentos.charAt(i)){
-        aux3 += aux2.charAt(j);
+        aux3 += aux2.charAt(j) + "-";
         x = -1;
         break;
          
