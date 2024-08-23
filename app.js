@@ -117,7 +117,7 @@ function eliminarFotoYTexto(){
 function textoSinAcentoYMayuscula(textoDeArea){ //Me permite detectar si hay mayusculas o acentos
 
    let acentos= "ÁÉÍÓÚÑáéíóúñABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
-   let validarTexto = false,aux2 = "", aux3 = "";
+   let aux2 = "", aux3 = "";
 
    aux2 = textoDeArea;
    
@@ -148,13 +148,9 @@ function textoSinAcentoYMayuscula(textoDeArea){ //Me permite detectar si hay may
 }
         contador2 = 0;     
       
-      } else {
-
-       // validarTexto = true;
-
-         //if(validarTexto){
+      } else {
  
-          asignarTexto('area', textoDeArea);
+       asignarTexto('area', textoDeArea);
                
    }   
 }
