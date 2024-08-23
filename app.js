@@ -155,7 +155,7 @@ function validacionTexto(mensajeArea,x){
       
       } else {
  
-       asignarTexto('area', textoDeArea);          
+       asignarTexto('area', mensajeArea);          
    }   
 }
 
