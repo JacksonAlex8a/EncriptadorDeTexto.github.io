@@ -116,17 +116,20 @@ function eliminarFotoYTexto(){
 
 function textoSinAcentoYMayuscula(textoDeArea){ //Me permite detectar si hay mayusculas o acentos
 
-   let acentos= "ÁÉÍÓÚÑáéíóúñABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
+   let caracteresInvalidos= "ÁÉÍÓÚÑáéíóúñABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
    let aux2 = "", aux3 = "",x = 0;
 
    aux2 = textoDeArea;
    
-   for(let i = 0; i < acentos.length; i++){
+   for(let i = 0; i < caracteresInvalidos.length; i++){
    
      for(let j = 0; j < aux2.length; j++){
        
-       if(aux2.charAt(j) == acentos.charAt(i)){
+       if(aux2.charAt(j) == caracteresInvalidos.charAt(i)){
+        
+       if(j < aux3.length){
         aux3 += aux2.charAt(j) + "-";
+}
         x = -1;
         break;
          
