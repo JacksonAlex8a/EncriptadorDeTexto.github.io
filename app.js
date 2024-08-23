@@ -158,3 +158,5 @@ function validacionTexto(){
        asignarTexto('area', textoDeArea);          
    }   
 }
+
+validacionTexto();
