@@ -134,6 +134,7 @@ function textoSinAcentoYMayuscula(textoDeArea){ //Me permite detectar si hay may
          aux += aux3.charAt(k);
          k++;
       }
+        aux3 = "";
         x = -1;
         break;
          
