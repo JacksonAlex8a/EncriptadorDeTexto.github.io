@@ -144,13 +144,12 @@ function textoSinAcentoYMayuscula(textoDeArea){ //Me permite detectar si hay may
 
    } else {
 
-    alert("Elimina los caracteres mayúsculas: " + aux3);
-}
+      alert("Elimina los caracteres mayúsculas: " + aux3);
+   }
         contador2 = 0;     
       
       } else {
  
-       asignarTexto('area', textoDeArea);
-               
+       asignarTexto('area', textoDeArea);          
    }   
 }
